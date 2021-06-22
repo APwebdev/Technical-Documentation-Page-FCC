@@ -19,8 +19,10 @@
                 <li class="li-nav"><a class="navbar-link" href="#introduction">Introduction</a></li>
                 <li class="li-nav"><a class="navbar-link" href="#tags-attributes">Tags and Attributes</a></li>
                 <li class="li-nav"><a class="navbar-link" href="#creating-webpage">Creating your first Webpage</a></li>
-                <li class="li-nav"><a class="navbar-link" href="#basic-tags">Head Tag</a></li>
-                <li class="li-nav"><a class="navbar-link" href="#body-tag">Body Tag</a></li>
+                <li class="li-nav"><a class="navbar-link" href="#basic-tags">Head Tags</a></li>
+                <li class="li-nav"><a class="navbar-link" href="#body-tag">Body Tags</a></li>
+                <li class="li-nav"><a class="navbar-link" href="#link-tag-nav">Links</a></li>
+                <li class="li-nav"><a class="navbar-link" href="#images">Images</a></li>
             </ul>
         </div>
     </nav>
@@ -63,22 +65,22 @@
             <p id="img-info">This is how your average HTML page is structured visually.</p>
         </section>
         <section class="main-section" id="basic-tags">
-            <h2 class="semi-title">Head Tag</h2>
+            <h2 class="semi-title">Head Tags</h2>
             <p class="doc-info">Inside the <code>&lt;head&gt;</code> tag, there is one tag that is always included: <code>&lt;title&gt;</code>, but there are others that are just as important:</p>
             <p class="doc-info"><code>&lt;title&gt;</code> - This is where we insert the page name as it will appear at the top of the browser window or tab.</p>
             <p class="doc-info"><code>&lt;meta&gt;</code> - This is where information about the document is stored: character encoding, name (page context), description.</p>
             <h3 class="h3-title">Let's try out a basic <code>&lt;head&gt;</code> section:</h3>
-            <div id="head-section-ex">
+            <div class="head-section-ex">
                 <p class="head-section"><code>&lt;head&gt;</code></p>
                 <p class="head-section"><code>&lt;title&gt;</code>My First Webpage<code>&lt;/title&gt;</code></p>
                 <p class="head-section"><code>&lt;meta charset="UTF-8"&gt;</code></p>
                 <p class="head-section"><code>&lt;meta name="description content="</code>This field contains information about your page, it is usually around two sentences long.<code>"&gt;</code></p>
-                <p class="head-section"><code>&lt;>meta name="author" content="</code>Your-Name<code>"&gt;</code></p>
+                <p class="head-section"><code>&lt;meta name="author" content="</code>Your-Name<code>"&gt;</code></p>
                 <p class="head-section"><code>&lt;/head&gt;</code></p>
             </div>
         </section>
         <section class="main-section" id="body-tag">
-            <h2 class="semi-title">Body Tag</h2>
+            <h2 class="semi-title">Body Tags</h2>
             <p class="doc-info">The HTML <code>&lt;body&gt;</code> is where we add content which is designed to be viewed by others.</p>
             <p class="doc-info">This includes text, images, tables, forms and everything else that we see on the internet every day.</p>
             <h3 class="h3-title">Adding Headings to your Webpage</h3>
@@ -95,6 +97,30 @@
             </div>
             <p class="doc-info">As you might have guessed <code>&lt;h1&gt;</code> and <code>&lt;h2&gt;</code> should be used for important titles, while the remaining tags should be used for sub-headings and less important text.</p>
             <p class="doc-info">Search engines bots use this order when deciphering which information is most important on a page.</p>
+            <h3 class="h3-title">How to add Text in HTML</h3>
+            <p class="doc-info">Adding text to our HTML page is simple using an element opened with the tag <code>&lt;p&gt;</code> which creates a new paragraph. We place all of our regular text inside the element <code>&lt;p&gt;</code>.</p>
+        </section>
+        <section class="main-section" id="link-tag-nav">
+            <h2 class="semi-title">Links</h2>
+            <p class="doc-info">The basic use of links and the anchor tag</p>
+            <h3 class="h3-title">How to add Links in HTML</h3>
+            <p class="doc-info">As you may have noticed, the internet is made up of a lot of links.</p>
+            <p class="doc-info">Almost everything you click on while surfing the web is a link takes you to another page within the website you are visiting or to an external site.</p>
+            <p class="doc-info">Links are included in an attribute opened by the <code>&lt;a&gt;</code> tag. This element is the first that we've met which uses an attribute and so it looks diffrent to previously mentioned tags.</p>
+            <h3 class="h3-title">The Anchor Tag</h3>
+            <p class="doc-info">The anchor tag is written in this format:</p>
+            <div class="head-section-ex">
+                <p class="head-section"><code>&lt;a href="https://yourlink.com"&gt;</code>Your link text here<code>&lt;/a&gt;</code></p>
+            </div>
+            <p class="doc-info">The first part of the attribute points to the page that will open once the link is clicked.</p>
+            <p class="doc-info">Meanwhile, the second part of the attribute contains the text which will be displayed to a visitor in order to entice them to click on that link.</p>
+            <p class="doc-info">If you are building your own website then you will most likely host all of your pages on professional web hosting. In this case, internal links on your website will <code>&lt;a href="mylinkedpage.html"&gt;</code>Link the title here<code>&lt;/a&gt;</code></p>
+        </section>
+        <section class="main-section" id="images">
+            <h2 class="semi-title">Images</h2>
+            <p class="doc-info">In today's modern digital world, images are everything. The <code>&lt;img&gt;</code> tag has everything you need to display images on your site. Much like the anchor element, image element also cointains an attribute</p>
+            <p class="doc-info">The attribute features information for your computer regarding the source, height, width and alt text of the image.</p>
+            <p class="doc-info">The file types generally used for image files online are: jpg, png, gif, and so on</p>
         </section>
     </main>
 </body>
