@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>HTML | Documentation Page</title>
 </head>
 <body>
     <nav id="navbar">
@@ -23,8 +23,11 @@
                 <li class="li-nav"><a class="navbar-link" href="#body-tag">Body Tags</a></li>
                 <li class="li-nav"><a class="navbar-link" href="#link-tag-nav">Links</a></li>
                 <li class="li-nav"><a class="navbar-link" href="#images">Images</a></li>
+                <li class="li-nav"><a class="navbar-link" href="#lists">Lists</a></li>
             </ul>
         </div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" id="html-logo">
+        <p class="copyright"> &copy; Copyright Adas Papievis 2021</p>
     </nav>
     <main id="main-doc">
         <section class="main-section" id="introduction">
@@ -61,7 +64,7 @@
             <p class="doc-info"><code>&lt;html&gt;</code> — This tag signals that from here on we are going to write in HTML code.</p>
             <p class="doc-info"><code>&lt;head&gt;</code> — This is where all the metadata for the page goes — stuff mostly meant for search engines and other computer programs.</p>
             <p class="doc-info"><code>&lt;body&gt;</code> — This is where the content of the page goes</p>
-            <img src="https://html.com/wp-content/uploads/html-homepage-layout-demo.webp">
+            <img src="https://html.com/wp-content/uploads/html-homepage-layout-demo.webp" id="image-html">
             <p id="img-info">This is how your average HTML page is structured visually.</p>
         </section>
         <section class="main-section" id="basic-tags">
@@ -69,7 +72,7 @@
             <p class="doc-info">Inside the <code>&lt;head&gt;</code> tag, there is one tag that is always included: <code>&lt;title&gt;</code>, but there are others that are just as important:</p>
             <p class="doc-info"><code>&lt;title&gt;</code> - This is where we insert the page name as it will appear at the top of the browser window or tab.</p>
             <p class="doc-info"><code>&lt;meta&gt;</code> - This is where information about the document is stored: character encoding, name (page context), description.</p>
-            <h3 class="h3-title">Let's try out a basic <code>&lt;head&gt;</code> section:</h3>
+            <p class="doc-info">Let's try out a basic <code>&lt;head&gt;</code> section:</h3>
             <div class="head-section-ex">
                 <p class="head-section"><code>&lt;head&gt;</code></p>
                 <p class="head-section"><code>&lt;title&gt;</code>My First Webpage<code>&lt;/title&gt;</code></p>
@@ -121,6 +124,45 @@
             <p class="doc-info">In today's modern digital world, images are everything. The <code>&lt;img&gt;</code> tag has everything you need to display images on your site. Much like the anchor element, image element also cointains an attribute</p>
             <p class="doc-info">The attribute features information for your computer regarding the source, height, width and alt text of the image.</p>
             <p class="doc-info">The file types generally used for image files online are: jpg, png, gif, and so on</p>
+            <p class="doc-info">Alt text is important to ensure that your site is ranked correctly on search sites and also for visually impaired visitors to your site.</p>
+            <p class="doc-info">The <code>&lt;img&gt;</code> tag is normally written as follows:</p>
+            <div class="head-section-ex">
+                <p class="head-section"><code>&lt;img src="yourimage.jpg" alt="</code>Describe the Image<code>" height="x" width="x"></code></p>
+            </div>
+        </section>
+        <section class="main-section" id="lists">
+            <h2 class="semi-title">HTML Lists</h2>
+            <p class="doc-info">In web design, there are two main types of lists which you may wish to add to your site.</p>
+            <h3 class="h3-title">Ordered List</h3>
+            <p class="doc-info">The first is an <code>&lt;ol&gt;</code>: This is an ordered list. For example:</p>
+            <ol class="ol-example">
+                <li class="li-type1">An item</li>
+                <li class="li-type1">Another item</li>
+                <li class="li-type1">One more item</li>
+            </ol>
+            <p class="doc-info">Inside the <code>&lt;ol&gt;</code> tag we list each item on the list inside <code>&lt;li&gt; &lt;/li&gt;</code> tags. For example:</p>
+            <div class="head-section-ex">
+                <p class="head-section"><code>&lt;ol&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>An item<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>Another item<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>One more item<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;/ol&gt;</code></p>
+            </div>
+            <h3 class="h3-title">Unordered Lists</h3>
+            <p class="doc-info">The second type of list that you may wish to include is an <code>&lt;ul&gt;</code> unordered list. This is better known as a bullet point list and contains no numbers.</p>
+            <ul class="ul-list">
+                <li class="li-type1">This is</li>
+                <li class="li-type1">An unordered</li>
+                <li class="li-type1">List</li>
+            </ul>
+            <p class="doc-info">For example:</p>
+            <div class="head-section-ex">
+                <p class="head-section"><code>&lt;ul&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>This is<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>An unordered<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;li&gt;</code>List<code>&lt;/li&gt;</code></p>
+                <p class="head-section"><code>&lt;/ul&gt;</code></p>
+            </div>
         </section>
     </main>
 </body>
